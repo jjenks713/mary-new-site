@@ -24,35 +24,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script type="text/javascript" src="/js/main.85741bff.js"></script>
 
-  <script>
-    $(document).ready(function(){
-        $('[data-toggle="popover"]').popover({
-            placement : 'top',
-            trigger : 'hover'
-        });
-        $( "#modal-trigger" ).click(function() {
-          console.log("nothing");
-          //alert( "Handler for .click() called." );
-          $(".modal").show();
-        });
-        $("#MyModal").modal();
-
-            var url = "https://photoslibrary.googleapis.com/v1/albums";
-            url += '?' + $.param({
-                'api-key': "",
-            });
-            $.ajax({
-                url: url,
-                method: 'GET',
-            }).done(function (result) {
-                console.log(result);
-            }).fail(function (err) {
-                throw err;
-            });
-    });
-
-    </script>
-
   <title>Prints | CBCP</title>
 
   <link href="/css/main.82cfd66e.css" rel="stylesheet">
@@ -220,23 +191,25 @@
 
 
 </body>
+<script type="text/javascript" src="/js/index.js"></script>
 <script type="text/javascript" src="/js/main.85741bff.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.0.min.js"
-integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function (event) {
-  masonryBuild();
-});
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        masonryBuild();
+      });
 
-  var windowWidth = $(window).width();
-  console.log("something", windowWidth);
-  if (windowWidth < 768) {
-    $("#hide-nav").hide();
-  };
-  document.addEventListener("DOMContentLoaded", function (event) {
-    navbarToggleSidebar();
-    navActivePage();
-  });
+        var windowWidth = $(window).width();
+        console.log("something", windowWidth);
+        if (windowWidth < 768) {
+          $("#hide-nav").hide();
+        };
+        document.addEventListener("DOMContentLoaded", function (event) {
+          navbarToggleSidebar();
+          navActivePage();
+        });
 
 
 </script>
