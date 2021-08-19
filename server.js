@@ -5,7 +5,10 @@ var PORT = process.env.PORT || 8081;
 
 var app = express();
 
+/*   GET https://photoslibrary.googleapis.com/v1/albums
+ */
 
+app.get("https://photoslibrary.googleapis.com/v1/albums");
 
 // Serve static content for the app from the "public" directory in the application directory.
 //app.use(express.static("public"));
@@ -19,6 +22,7 @@ app.get("/", function(req, res) {
     // res.send("Welcome to the Star Wars Page!")
     res.sendFile(path.join(__dirname, "index.html"));
   });
+
 /* app.get("/about", function(req, res) {
     // res.send("Welcome to the Star Wars Page!")
     res.sendFile(path.join(__dirname, "about.html"));

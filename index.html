@@ -36,6 +36,19 @@
           $(".modal").show();
         });
         $("#MyModal").modal();
+
+            var url = "https://photoslibrary.googleapis.com/v1/albums";
+            url += '?' + $.param({
+                'api-key': "879605441196-8t4r53eeuk5te6seg9i0sfv4eo8hm7m2.apps.googleusercontent.com",
+            });
+            $.ajax({
+                url: url,
+                method: 'GET',
+            }).done(function (result) {
+                console.log(result);
+            }).fail(function (err) {
+                throw err;
+            });
     });
 
     </script>
@@ -224,12 +237,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     navbarToggleSidebar();
     navActivePage();
   });
-  $('#ul-popover').popover(options)
-  $(function () {
-    $('[data-toggle="popover"]').popover()
-  })
-  var myModal = document.getElementById('staticBackdrop')
-  var trigger = document.getElementById('modal-trigger')
+
 
 </script>
 
