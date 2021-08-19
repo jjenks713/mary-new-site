@@ -15,12 +15,14 @@ $(document).ready(function(){
       //var fileDom = $(data);
         console.log("testing get");
         console.log(data);
+        addKeyAjax(data);
     });
-
+    function addKeyAjax(data){
         var url = "https://photoslibrary.googleapis.com/v1/albums";
         url += '?' + $.param({
-            'api-key': "",
+            'api-key': data,
         });
+        console.log(url);
         $.ajax({
             url: url,
             method: 'GET',
@@ -29,4 +31,5 @@ $(document).ready(function(){
         }).fail(function (err) {
             throw err;
         });
+    };
 });
