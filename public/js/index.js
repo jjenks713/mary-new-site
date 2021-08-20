@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $.get('/key.txt', function(data) {
+    //$.get('/key.txt', function(data) {
 
 /*         //var fileDom = $(data);
             var apiKey = data
@@ -76,5 +76,6 @@ $(document).ready(function(){
       $(".modal").show();
     });
     $("#MyModal").modal();
+    //$('.carousel').carousel();
 
 });

@@ -17,18 +17,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.get("/", function(req, res) {
-    // res.send("Welcome to the Star Wars Page!")
     res.sendFile(path.join(__dirname, "index.html"));
   });
 
-/* app.get("/about", function(req, res) {
-    // res.send("Welcome to the Star Wars Page!")
-    res.sendFile(path.join(__dirname, "about.html"));
+app.get("/books", function(req, res) {
+    res.sendFile(path.join(__dirname, "books.html"));
     });
-app.get("/calendar", function(req, res) {
-    // res.send("Welcome to the Star Wars Page!")
-    res.sendFile(path.join(__dirname, "calendar.html"));
-    }); */
+app.get("/contact", function(req, res) {
+    res.sendFile(path.join(__dirname, "contact.html"));
+    });
 
 // Import routes and give the server access to them.
 /* var routes = require("./routes/index");
