@@ -1,4 +1,33 @@
 $(document).ready(function(){
+
+    //trying to add api for images. easier to just edit manually
+/*     function addKeyAjax(apiKey){
+        $.get('/key.txt', function(data) {
+            //var fileDom = $(data);
+                var apiKey = data
+                addKeyAjax(apiKey);
+            });
+        var url = "https://api.unsplash.com/users/jenkin79/photos/?client_id=" + apiKey;
+        
+        $.ajax({
+            url: url,
+            method: 'GET'
+        }).done(function (result) {
+           // var response = result.length;
+            for (var i = 0; i < result.length; i++){
+                //fconsole.log(result[i].user.username);    
+//                console.log(result.length);
+                var unsplashArray = result[i].urls.regular;
+               console.log(result[i].urls.regular); 
+
+                $("#photos-appear-here").append('<img class="img-responsive" alt="" src="' + unsplashArray + '"><a class="project-description"  data-toggle="modal" data-target="#exampleModal"></a>');
+                };
+            }).fail(function (err) {
+            //console.log(url);
+            throw err;
+        });
+    }; */
+
     $('[data-toggle="popover"]').popover({
         placement : 'top',
         trigger : 'hover'
@@ -10,42 +39,4 @@ $(document).ready(function(){
     });
     $("#MyModal").modal();
 
-
-    $.get('/key.txt', function(data) {
-      //var fileDom = $(data);
-        console.log("testing get");
-        console.log(data);
-        var apiKey = data
-        addKeyAjax(apiKey);
-    });
-    function addKeyAjax(apiKey){
-        var url = "https://api.unsplash.com/photos/?client_id=" + apiKey;
-        console.log(url);
-        $.ajax({
-            url: url,
-            method: 'GET'
-        }).done(function (result) {
-           // var response = result.length;
-            for (var i = 0;i < result.length; i++){
-
-                console.log(result.length);
-                if (result[i].length){
-                    console.log(0);
-                    var photoDiv = $("<div></div>")
-                    var image = $("<img>")
-                    image.attr("src", result[i].urls.full);
-                    console.log(image);
-                    photoDiv.append(image);
-                    $("#photos-appear-here").prepend(photoDiv);
-                } else {
-                    console.log("Not working");
-                };
-
-            };
-        console.log(result);
-        }).fail(function (err) {
-            //console.log(url);
-            throw err;
-        });
-    };
 });
