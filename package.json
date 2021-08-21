@@ -19,6 +19,10 @@
   "homepage": "https://github.com/jjenks713/mary-new-site#readme",
   "dependencies": {
     "ajax": "0.0.4",
-    "express": "^4.17.1"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "modules": "^0.4.0",
+    "nodemailer": "^6.6.3",
+    "sendmail": "^1.6.1"
   }
 }

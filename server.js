@@ -12,6 +12,7 @@ var app = express();
 //app.use(express.static("public"));
 app.use(express.static(__dirname + '/public'));
 
+
 // Parse application body as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -25,10 +26,31 @@ app.get("/books", function(req, res) {
     });
 app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "contact.html"));
+
     });
-app.post("/handler", function(req, res) {
-    res.sendFile(path.join(__dirname, "/js/hamdler.php"));
-    });
+app.post("/form", function(req, res){
+  //console.log(req.body.userEmail, req.body.userName, req.body.userSubject, req.body.userText);
+/*   res.json([{
+   email: req.body.userEmail,
+   name: req.bodyuserName,
+   subject: req.body.userSubject,
+   subject: req.body.userText
+
+ }]) */
+  var sendmail = require('sendmail')();
+  sendmail({
+      from: req.body.userEmail,
+      to: 'jenkin79@gmail.com',
+      subject: req.body.userSubject,
+      html: req.body.userText,
+    }, function(err, reply) {
+      console.log(err && err.stack);
+      console.dir(reply);
+  });
+});
+
+
+
 
 // Import routes and give the server access to them.
 /* var routes = require("./routes/index");
