@@ -26,6 +26,9 @@ app.get("/books", function(req, res) {
 app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "contact.html"));
     });
+app.post("/handler", function(req, res) {
+    res.sendFile(path.join(__dirname, "/js/hamdler.php"));
+    });
 
 // Import routes and give the server access to them.
 /* var routes = require("./routes/index");
