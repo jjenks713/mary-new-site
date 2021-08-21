@@ -25,7 +25,8 @@ app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "contact.html"));
 
     });
-app.post("/form", function(req, res){
+// taken out so I dont receive emails on test
+/* app.post("/form", function(req, res){
 
   var sendmail = require('sendmail')();
   sendmail({
@@ -37,7 +38,7 @@ app.post("/form", function(req, res){
       console.log(err && err.stack);
       console.dir(reply);
   });
-});
+}); */
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {

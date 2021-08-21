@@ -7,8 +7,8 @@ $(document).ready(function () {
         var email = $('#emailInput').val();
         var name = $('#name').val();
         var subject = $('#subject').val();
-        var text = $('#textArea').val();
-        console.log(email, name, subject, text);
+        var text = $('#textArea').val() + " " + name + ", " +  " Phone - " + $('#number').val();
+        console.log(text);
 
         $.post("/form", 
         {
