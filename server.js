@@ -5,9 +5,6 @@ var PORT = process.env.PORT || 8081;
 
 var app = express();
 
-/*   GET https://photoslibrary.googleapis.com/v1/albums
- */
-
 // Serve static content for the app from the "public" directory in the application directory.
 //app.use(express.static("public"));
 app.use(express.static(__dirname + '/public'));
@@ -29,14 +26,7 @@ app.get("/contact", function(req, res) {
 
     });
 app.post("/form", function(req, res){
-  //console.log(req.body.userEmail, req.body.userName, req.body.userSubject, req.body.userText);
-/*   res.json([{
-   email: req.body.userEmail,
-   name: req.bodyuserName,
-   subject: req.body.userSubject,
-   subject: req.body.userText
 
- }]) */
   var sendmail = require('sendmail')();
   sendmail({
       from: req.body.userEmail,
@@ -48,14 +38,6 @@ app.post("/form", function(req, res){
       console.dir(reply);
   });
 });
-
-
-
-
-// Import routes and give the server access to them.
-/* var routes = require("./routes/index");
-
-app.use(routes); */
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
