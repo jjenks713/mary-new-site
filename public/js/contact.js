@@ -19,8 +19,14 @@ $(document).ready(function () {
         },
         function (data){
             console.log(data);
+
         }
         );
+        reload();
     });
+    function reload(){
+        window.location.href = "/contact"
+        alert("Your Inquiry was recieved");
+    };
  });
         

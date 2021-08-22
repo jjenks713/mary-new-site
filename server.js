@@ -23,22 +23,24 @@ app.get("/books", function(req, res) {
     });
 app.get("/contact", function(req, res) {
     res.sendFile(path.join(__dirname, "contact.html"));
-
+    });
+app.get("/drawings", function(req, res) {
+    res.sendFile(path.join(__dirname, "drawings.html"));
     });
 // taken out so I dont receive emails on test
-/* app.post("/form", function(req, res){
+app.post("/form", function(req, res){
 
   var sendmail = require('sendmail')();
   sendmail({
       from: req.body.userEmail,
-      to: 'jenkin79@gmail.com',
+      to: 'jenkin79@gmail.comasdf',
       subject: req.body.userSubject,
       html: req.body.userText,
     }, function(err, reply) {
       console.log(err && err.stack);
       console.dir(reply);
   });
-}); */
+});
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
