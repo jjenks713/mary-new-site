@@ -13,5 +13,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  #ul-nav {
+    font-size: 20px;
   }
 /*# sourceMappingURL=main.85741bff.map*/
