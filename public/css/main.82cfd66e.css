@@ -25,6 +25,9 @@ body {
   h1 {
     font-family: 'Architects Daughter', cursive !important;
   }
+  h2 {
+    font-family: 'Architects Daughter', cursive !important;
+  }
   .carousel-item:hover {
     cursor: pointer;
     opacity: .6;
