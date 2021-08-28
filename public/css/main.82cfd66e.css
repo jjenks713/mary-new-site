@@ -37,6 +37,10 @@ body {
   .logo {
     width: 175px;
   }
+  .long-logo {
+    height: 50px;
+    width: 300px;
+  }
   .form-group {
     padding-left: 0px;
     padding-right: 0px;
