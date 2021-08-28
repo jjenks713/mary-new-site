@@ -27,6 +27,9 @@ app.get("/contact", function(req, res) {
 app.get("/drawings", function(req, res) {
     res.sendFile(path.join(__dirname, "drawings.html"));
     });
+app.get("/about", function(req, res) {
+    res.sendFile(path.join(__dirname, "about.html"));
+    });
 // taken out so I dont receive emails on test
 /* app.post("/form", function(req, res){
 
