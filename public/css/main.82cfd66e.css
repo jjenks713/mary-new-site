@@ -34,4 +34,8 @@ body {
   .logo {
     width: 200px;
   }
+  .form-group {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 /*# sourceMappingURL=main.85741bff.map*/
