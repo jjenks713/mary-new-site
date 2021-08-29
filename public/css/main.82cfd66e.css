@@ -38,11 +38,10 @@ body {
     height: 5vw;
   }
   .logo {
-    width: 175px;
+    width: 100%;
   }
   .long-logo {
-    height: 50px;
-    width: 300px;
+    width: 80%;
   }
   .form-group {
     padding-left: 0px;
