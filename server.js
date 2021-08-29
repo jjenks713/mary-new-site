@@ -31,19 +31,19 @@ app.get("/about", function(req, res) {
     res.sendFile(path.join(__dirname, "about.html"));
     });
 // taken out so I dont receive emails on test
-/* app.post("/form", function(req, res){
+app.post("/form", function(req, res){
 
   var sendmail = require('sendmail')();
   sendmail({
       from: req.body.userEmail,
-      to: 'jenkin79@gmail.com',
+      to: 'creepybutcutepress@gmail.com',
       subject: req.body.userSubject,
       html: req.body.userText,
     }, function(err, reply) {
       console.log(err && err.stack);
       console.dir(reply);
   });
-}); */
+});
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {
