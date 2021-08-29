@@ -42,7 +42,7 @@ body {
   }
   .long-logo {
     width: 70%;
-    position: fixed;
+    position: absolute;
   }
   .form-group {
     padding-left: 0px;
