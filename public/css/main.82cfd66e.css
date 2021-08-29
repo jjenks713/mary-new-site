@@ -41,7 +41,8 @@ body {
     width: 100%;
   }
   .long-logo {
-    width: 80%;
+    width: 70%;
+    position: fixed;
   }
   .form-group {
     padding-left: 0px;
