@@ -30,6 +30,9 @@ app.get("/drawings", function(req, res) {
 app.get("/about", function(req, res) {
     res.sendFile(path.join(__dirname, "about.html"));
     });
+app.get("/commissions", function(req, res) {
+    res.sendFile(path.join(__dirname, "commission.html"));
+    });
 // taken out so I dont receive emails on test
 app.post("/form", function(req, res){
 
