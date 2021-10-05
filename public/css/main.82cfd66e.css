@@ -48,4 +48,26 @@ body {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .co-1 {
+    float: left;
+    width: 80%;
+  }
+  .co-2 {
+    float: right;
+    width: 20%;
+    padding-left: 20px;
+  }
+
+  @media only screen and (max-width : 550px) {
+    .co-1 {
+      width: 100%;
+
+    }
+    .co-2 {
+      width: 100%;
+      text-align: center;
+      padding-left: 0;
+    }
+  
+  }
 /*# sourceMappingURL=main.85741bff.map*/
