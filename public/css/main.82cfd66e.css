@@ -30,7 +30,7 @@ body {
   }
   .carousel-item:hover {
     cursor: pointer;
-    opacity: .6;
+    opacity: .8;
   }
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
