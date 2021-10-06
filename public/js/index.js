@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    var picArray = [
+/*     var picArray = [
         {
             url: '/assets/images/harlots-calamaty.jpg',
             name: 'Harlots Calamity',
@@ -218,7 +218,7 @@ $(document).ready(function(){
 
       $("#display-div"). append(displayDiv);
 
-    };
+    }; */
 
     $('[data-toggle="popover"]').popover({
         placement : 'top',
