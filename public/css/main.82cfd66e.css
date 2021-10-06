@@ -86,11 +86,17 @@ body {
     padding-bottom: 50%;
   }
   }
-/*   .grid {
-    height: 100% !important;
-  } */
-/*   .grid-item {
-    padding-right: 15px;
-    height: fit-content;
-  } */
-/*# sourceMappingURL=main.85741bff.map*/
+  .grid-item { width: 400px;
+  padding:10px;
+  top: 2654.72px;
+  }
+  .grid-item--width2 { width: 300px; }
+
+  @media only screen and (max-width : 750px) {
+    .grid-item { 
+      width: 100%;
+      padding:10px;
+      top: 2654.72px;
+      }
+  }
+  

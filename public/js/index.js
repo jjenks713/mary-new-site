@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-/*     var picArray = [
+    var picArray = [
         {
             url: '/assets/images/harlots-calamaty.jpg',
             name: 'Harlots Calamity',
@@ -182,9 +182,25 @@ $(document).ready(function(){
             val: "20"
         },
     ];
+    //$('selector').masonry()
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 300
+      });
+    
+    var mediaItemContainer = $('#display-div');
+    var freeMasonry = $('.grid');
+
+    freeMasonry.imagesLoaded()
+      .done(function(){
+        freeMasonry.masonry({
+          itemSelector: '.grid-item'
+        });
+      });
 
     for(var i = 0; i < picArray.length; i++){
-        console.log(picArray[i]);
+        //console.log(picArray[i]);
         var displayDiv =
         '<div class="grid-item">' +
             '<img class="img-responsive" alt="" src="'+ picArray[i].url + '">' +
@@ -216,9 +232,12 @@ $(document).ready(function(){
       '<br> ' +
       '<br> '
 
-      $("#display-div"). append(displayDiv);
+      //$("#display-div"). append(displayDiv).masonry('appended', displayDiv);
+      mediaItemContainer.append(displayDiv).masonry( 'appended', displayDiv );
+      mediaItemContainer.masonry( 'reloadItems' );
+      mediaItemContainer.masonry( 'layout' );
+    };
 
-    }; */
 
     $('[data-toggle="popover"]').popover({
         placement : 'top',
