@@ -190,14 +190,6 @@ $(document).ready(function(){
       });
     
     var mediaItemContainer = $('#display-div');
-    var freeMasonry = $('.grid');
-
-    freeMasonry.imagesLoaded()
-      .done(function(){
-        freeMasonry.masonry({
-          itemSelector: '.grid-item'
-        });
-      });
 
     for(var i = 0; i < picArray.length; i++){
         //console.log(picArray[i]);
