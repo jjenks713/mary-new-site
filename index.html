@@ -93,7 +93,7 @@
   <main class="" id="main-collapse">
 
     <div class="hero-full-wrapper">
-      <h1 class="text-center text-white">Screen Prints to test</h1><br>
+      <h1 class="text-center text-white">Screen Prints</h1><br>
       <div id="display-div" class="grid">
         <div class="gutter-sizer"></div>
         <div class="grid-sizer"></div>
@@ -123,6 +123,14 @@
         itemSelector: '.grid-item',
         columnWidth: 200
       });
+      var freeMasonry = $('.grid');
+
+      freeMasonry.imagesLoaded()
+        .done(function(){
+          freeMasonry.masonry({
+            itemSelector: '.grid-item'
+          });
+  });
     })
   </script>
   <script>
