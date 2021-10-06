@@ -116,21 +116,21 @@
 
   <script>
     $(document).ready(function(){
-    console.log('load');
-    $('selector').masonry()
-    $('.grid').masonry({
-        // options
-        itemSelector: '.grid-item',
-        columnWidth: 200
-      });
-      var freeMasonry = $('.grid');
+      console.log('load');
+      $('selector').masonry()
+        $('.grid').masonry({
+          // options
+          itemSelector: '.grid-item',
+          columnWidth: 200
+        });
+        var freeMasonry = $('.grid');
 
       freeMasonry.imagesLoaded()
         .done(function(){
           freeMasonry.masonry({
             itemSelector: '.grid-item'
           });
-  });
+        });
     })
   </script>
   <script>
