@@ -112,12 +112,6 @@ $(document).ready(function(){
             val: "18"
         },
         {
-            url: '/assets/images/girl-2.jpg',
-            name: 'Girl 2',
-            med: 'Charcoal on Gray Paper',
-            val: "18"
-        },
-        {
             url: '/assets/images/girl-3.jpg',
             name: 'Girl 3',
             med: 'Charcoal on Gray Paper',
