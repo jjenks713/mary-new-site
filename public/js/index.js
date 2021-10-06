@@ -1,70 +1,224 @@
 $(document).ready(function(){
 
-    //$.get('/key.txt', function(data) {
+    var picArray = [
+        {
+            url: '/assets/images/harlots-calamaty.jpg',
+            name: 'Harlots Calamity',
+            med: 'Intaglio on Stonehenge',
+            size: '10"X14in"',
+            ed: 'Ed. 15',
+            price: '$40',
+            val: '1'
+        },
+        {
+            url: '/assets/images/heres-johnny.jpg',
+            name: 'Heres Johnny',
+            med: 'Screenprint on Stonehenge',
+            size: '14"X18in"',
+            ed: 'Ed. 15',
+            price: '$60',
+            val: '2'
+        },
+        {
+            url: '/assets/images/human-nature.jpg',
+            name: 'Human Nature',
+            med: 'Relief on Stonehenge',
+            size: '20”x15”',
+            ed: 'Ed. 10',
+            price: '$60',
+            val: '3'
+        },
+        {
+            url: '/assets/images/2020.jpg',
+            name: '2020',
+            med: 'Relief on Masa',
+            size: '7”x10”',
+            ed: 'Ed. 9',
+            price: '$25',
+            val: '4'
+        },
+        {
+            url: '/assets/images/a-town-divided.jpg',
+            name: 'A Town Divided',
+            med: 'Suicide Relief on Lenox',
+            size: '11”x15”',
+            ed: 'Ed. 6',
+            price: '$40',
+            val: '5'
+        },
+        {
+            url: '/assets/images/alice.jpg',
+            name: 'Alice',
+            med: 'Screenprint on Stonehenge',
+            size: '11”x18”',
+            ed: 'Ed. 10',
+            price: '$30',
+            val: '6'
+        },
+        {
+            url: '/assets/images/any-other-name.jpg',
+            name: 'Any Other Name',
+            med: 'Intaglio on Lenox',
+            size: '6”x8”',
+            ed: 'Ed. 20',
+            price: '$15',
+            val: '7'
+        },
+        {
+            url: '/assets/images/happy-family.jpg',
+            name: 'Happy Family',
+            med: 'Intaglio on Rives BFK',
+            size: '11”x14”',
+            ed: 'Ed. 10',
+            price: '$40',
+            val: '8'
+        },
+        {
+            url: '/assets/images/king-of-printers.jpg',
+            name: 'King of Printers',
+            med: 'Letterpress on Lettra',
+            size: '5.25”x7”',
+            ed: 'Ed. 50',
+            price: '$10',
+            val: '9'
+        },
+        {
+            url: '/assets/images/marionette.jpg',
+            name: 'Marionette',
+            med: 'Intaglio on Stonehenge',
+            size: '10”x14”',
+            ed: 'Ed. 15',
+            price: '$40',
+            val: '10'
+        },
+        {
+            url: '/assets/images/monument.jpg',
+            name: 'Monument Valley',
+            med: 'Screenprint on Stonehenge',
+            size: '12”x12”',
+            ed: 'Ed. 20',
+            price: '$60',
+            val: '11'
+        },
+        {
+            url: '/assets/images/psychopaths.jpg',
+            name: 'Psychopaths',
+            med: 'Letterpress on Lettra',
+            size: '5.5”x9.5”',
+            ed: 'Ed. 25',
+            price: '$25',
+            val: '12'
+        },
+        {
+            url: '/assets/images/purgatory.jpg',
+            name: 'Psychopaths',
+            med: 'Screenprint on Stonehenge',
+            size: '11”x14”',
+            ed: 'Ed. 7',
+            price: '$30',
+            val: "13"
+        },
+        {
+            url: '/assets/images/sinking.jpg',
+            name: 'Sinking',
+            med: 'Photopolymer Etching on Stonehenge',
+            size: '5”x7”',
+            ed: 'Ed. 20',
+            price: '$25',
+            val: "14"
+        },
+        {
+            url: '/assets/images/sisters-bw.jpg',
+            name: 'Sisters B&W',
+            med: 'Relief on Masa',
+            size: '5”x6”',
+            ed: 'Ed. 30',
+            price: '$15',
+            val: "15"
+        },
+        {
+            url: '/assets/images/sisters.jpg',
+            name: 'Sisters',
+            med: 'Relief on Masa',
+            size: '5”x6”',
+            ed: 'Ed. 30',
+            price: '$15',
+            val: "16"
+        },
+        {
+            url: '/assets/images/sloth.jpg',
+            name: 'Sloth',
+            med: 'Suicide Relief and Letterpress',
+            size: '11”x13.5”',
+            ed: 'Ed. 25',
+            price: '$40',
+            val: "17"
+        },
+        {
+            url: '/assets/images/studio-life.jpg',
+            name: 'Studio Life',
+            med: 'Suicide Relief on Masa',
+            size: '12”x12”',
+            ed: 'Ed. 10',
+            price: '$60',
+            val: "18"
+        },
+        {
+            url: '/assets/images/tenacious.jpg',
+            name: 'Tenacious',
+            med: 'Intaglio on Stonehenge',
+            size: '8”x10”',
+            ed: 'Ed. 10 AP',
+            price: '$40',
+            val: "19"
+        },
+        {
+            url: "/assets/images/unawares.jpg",
+            name: 'Unawares',
+            med: 'Relief and Watercolor on Lenox',
+            size: '12”x16”',
+            ed: 'Ed. 5',
+            price: '$40',
+            val: "20"
+        },
+    ];
 
-/*         //var fileDom = $(data);
-            var apiKey = data
-            addKeyAjax(apiKey);
-        });
-    //trying to add api for images. easier to just edit manually
-    function addKeyAjax(apiKey){
+    for(var i = 0; i < picArray.length; i++){
+        console.log(picArray[i]);
+        var displayDiv =
+        '<div class="grid-item">' +
+            '<img class="img-responsive" alt="" src="'+ picArray[i].url + '">' +
+            '<a class="project-description"  data-toggle="modal" data-target="#modal' + picArray[i].val + '"></a>' +
+            '<div class="modal fade" id="modal' + picArray[i].val + '" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">' +
+            '<div class="modal-dialog modal-dialog-centered modal-xl text-white" role="document">' +
+                '<div class="modal-content bg-dark container">' +
+                    '<div id="class-removal" class="modal-body text-white">' +
+                    '<button type="button" class="close" data-dismiss="modal" class="co-2" aria-label="Close">' +
+                        '<span aria-hidden="true">&times;</span>' +
+                        '</button>' +
+                    '<div class="co-1">' +
+                        '<img class="img-responsive" alt="" src="'+ picArray[i].url + '">' +
+                    '</div>' +
+                    '<div class="co-2">' +
+                        '<h2 class="text-white" id="modalLabel">'+ picArray[i].name + '</h2>' +
+                        '<div> ' +
+                        '<p>'+ picArray[i].med + '</p>' +
+                        '<p>'+ picArray[i].size + '</p>' +
+                        '<p>'+ picArray[i].ed + '</p>' +
+                        '<p>'+ picArray[i].price + '</p>' +
+                        '</div>' +
+                    '</div>' +                   
+                    '</div>' +          
+                '</div>' +
+            '</div>' +
+            '</div>' +
+      '</div>' +
+      '<br> ' +
+      '<br> '
 
-        var url = "https://api.unsplash.com/users/jenkin79/photos/?client_id=" + apiKey;
-                //var int = number[1001];
-        var numArray = [];
-        for (var y = 0; y < 1000; y++){
-            
-            numArray.push(y);
-            //console.log(numArray);
-        }
-        $.ajax({
-            url: url,
-            method: 'GET'
-        }).done(function (result) {
-           // var response = result.length;
-                for (var i = 0; i < result.length; i++){
-                    //fconsole.log(result[i].user.username);    
-    //                console.log(result.length);
-                    //var unsplashArray = result[i].urls.regular;
-                    console.log(result[i].urls.regular); 
+      $("#display-div"). append(displayDiv);
 
-                    var singleNumber
-                    for (var n = 0; n < numArray.length; n++){
-                        singleNumber = numArray[n];
-                        //console.log(numArray[n]);
-                    }
-                    
-                    var displayImage = 
-                    '<div class="gutter-sizer"></div>' +
-                    '<div class="grid-sizer"></div>' +
-                        '<div class="grid-item">' +
-                            '<img class="img-responsive" alt="" src="' + result[i].urls.regular + '">' +
-                            '<a class="project-description"  data-toggle="modal" data-target="#exampleModal' + singleNumber + '"></a>' +
-                            '<div class="modal fade" id="exampleModal' + singleNumber + '" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">' +
-                            '<div class="modal-dialog modal-dialog-centered text-white modal-lg" role="document">' +
-                                '<div class="modal-content bg-dark" style="width: 600px;">' +
-                                '<div class="modal-header">' +
-                                    '<h5 class="modal-title text-white" id="exampleModalLabel' + singleNumber + '">Art Title</h5>' +
-                                    '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
-                                    '<span aria-hidden="true">&times;</span>' +
-                                    '</button>' +
-                                '</div>' +
-                                '<div class="modal-body text-white">' +
-                                    '<p>Art Something</p><p>Art</p><p>Art</p><p>yup art</p>' +
-                                    '<img class="img-responsive" alt="" style="width: 600px;" src="' + result[i].urls.regular + '"></a>' +
-                                '</div>' +
-                                '</div>' +
-                                '</div>' +
-                            '</div>' +
-                            '</div>'
-                    console.log(singleNumber);
-                    $("#photos-appear-here").prepend(displayImage);
-                };
-            }).fail(function (err) {
-            //console.log(url);
-            throw err;
-        });
-    }; */
+    };
 
     $('[data-toggle="popover"]').popover({
         placement : 'top',
