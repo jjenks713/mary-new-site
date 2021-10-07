@@ -124,7 +124,7 @@ $(document).ready(function(){
         //console.log(picArray[i]);
         var displayDiv =
         '<div class="grid-item">' +
-            '<img class="img-responsive" alt="" src="'+ picArray[i].url + '">' +
+            '<img class="img-responsive" alt="" src="'+ picArray[i].url + '" loading="lazy">' +
             '<a class="project-description"  data-toggle="modal" data-target="#modal' + picArray[i].val + '"></a>' +
             '<div class="modal fade" id="modal' + picArray[i].val + '" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">' +
             '<div class="modal-dialog modal-dialog-centered modal-xl text-white" role="document">' +
