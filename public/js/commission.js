@@ -156,7 +156,14 @@ $(document).ready(function(){
       mediaItemContainer.masonry( 'reloadItems' );
       mediaItemContainer.masonry( 'layout' );
     };
+    var freeMasonry = $('.grid');
 
+    freeMasonry.imagesLoaded()
+      .done(function(){
+        freeMasonry.masonry({
+          itemSelector: '.grid-item'
+        });
+      });
 
     $('[data-toggle="popover"]').popover({
         placement : 'top',

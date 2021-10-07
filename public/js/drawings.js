@@ -323,12 +323,15 @@ $(document).ready(function(){
       mediaItemContainer.imagesLoaded();
       
     };
+
+      var freeMasonry = $('.grid');
+
     freeMasonry.imagesLoaded()
-    .done(function(){
-      freeMasonry.masonry({
-        itemSelector: '.grid-item'
+      .done(function(){
+        freeMasonry.masonry({
+          itemSelector: '.grid-item'
+        });
       });
-    });
 
     $('[data-toggle="popover"]').popover({
         placement : 'top',
