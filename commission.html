@@ -119,8 +119,6 @@
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
   <script>
-    $(document).ready(function(){
-      console.log('load');
 
       $('body').append('<div style="" id="loadingDiv"><div class="loader text-center"><img class="loader-img" src="assets/images/load.gif" alt="Loading . . ."><p style="font-size: 20px;">Loading . . .</p></div></div>');
       $(window).on('load', function(){
@@ -138,6 +136,10 @@
             $( "#loadingDiv" ).remove(); //makes page more lightweight 
         });  
       }
+
+
+    $(document).ready(function(){
+      console.log('load');
 
       $('selector').masonry()
       $('.grid').masonry({
