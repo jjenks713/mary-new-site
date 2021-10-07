@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
-    $('body').append('<div style="" id="loadingDiv"><div class="loader">Loading...</div></div>');
+    $('body').append('<div style="" id="loadingDiv"><div class="loader text-center"><img class="loader-img" src="assets/images/load.gif" alt="Loading . . ."><p style="font-size: 20px;">Loading . . .</p></div></div>');
     $(window).on('load', function(){
-    setTimeout(removeLoader, 2000); //wait for page load PLUS two seconds.
+    setTimeout(removeLoader, 500); //wait for page load PLUS two seconds.
     });
     function removeLoader(){
         $( "#loadingDiv" ).fadeOut(500, function() {
