@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
     var picArray = [
         {
             url: '/assets/images/harlots-calamaty.jpg',
