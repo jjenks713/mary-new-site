@@ -1,15 +1,5 @@
 $(document).ready(function(){
 
-    $('body').append('<div style="" id="loadingDiv"><div class="loader text-center"><img class="loader-img" src="assets/images/load.gif" alt="Loading . . ."><p style="font-size: 20px;">Loading . . .</p></div></div>');
-    $(window).on('load', function(){
-    setTimeout(removeLoader, 500); //wait for page load PLUS two seconds.
-    });
-    function removeLoader(){
-        $( "#loadingDiv" ).fadeOut(1000, function() {
-        // fadeOut complete. Remove the loading div
-        $( "#loadingDiv" ).remove(); //makes page more lightweight 
-    });  
-    }
 
     var picArray = [
         {

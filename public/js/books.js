@@ -1,22 +1,6 @@
 $(document).ready(function(){
-
-  $('body').append('<div style="" id="loadingDiv"><div class="loader"><img  class="loader-img" src="assets/images/load.gif" alt="Loading..."><p style="font-size: 20px;">Loading...</p></div></div>');
-  $(window).on('load', function(){
-  setTimeout(removeLoader, 500); //wait for page load PLUS two seconds.
-  });
-  function removeLoader(){
-      $( "#loadingDiv" ).fadeOut(700, function() {
-      // fadeOut complete. Remove the loading div
-      $(".carousel-control-prev").fadeIn(1000, function(){
-        $(".carousel-control-prev").show();
-      });
-      $(".carousel-control-next").fadeIn(700, function(){
-        $(".carousel-control-next").show();
-      });
-      
-      $( "#loadingDiv" ).remove(); //makes page more lightweight 
-  });  
-  }
+  
+  
     $(".modal").modal();
     $("#carousel2").click(function(){
       console.log("click")

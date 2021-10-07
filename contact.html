@@ -187,6 +187,37 @@
   crossorigin="anonymous"></script>
 <script type="module" src="/js/contact.js"></script>
 <script type="text/javascript" src="/js/main.85741bff.js"></script>
+<script>
+  $(document).ready(function(){
+    console.log('load');
+
+    $('body').append('<div style="" id="loadingDiv"><div class="loader text-center"><img class="loader-img" src="assets/images/load.gif" alt="Loading . . ."><p style="font-size: 20px;">Loading . . .</p></div></div>');
+    $(window).on('load', function(){
+      setTimeout(removeLoader, 500); //wait for page load PLUS two seconds.
+      });
+    function removeLoader(){
+          $( "#loadingDiv" ).fadeOut(1000, function() {
+          // fadeOut complete. Remove the loading div
+          $( "#loadingDiv" ).remove(); //makes page more lightweight 
+      });  
+    }
+
+    $('selector').masonry()
+      $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 200
+      });
+      var freeMasonry = $('.grid');
+
+    freeMasonry.imagesLoaded()
+      .done(function(){
+        freeMasonry.masonry({
+          itemSelector: '.grid-item'
+        });
+      });
+  })
+</script>
   <script>
       document.addEventListener("DOMContentLoaded", function (event) {
         masonryBuild();
