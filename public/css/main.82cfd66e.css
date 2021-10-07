@@ -124,7 +124,7 @@ body {
       text-align: center;
   }
   .loader-img {
-    margin-top: 15%;
+    margin-top: 10%;
   }
 
   @-webkit-keyframes load8 {
@@ -159,6 +159,7 @@ body {
   @media only screen and (max-width : 750px) {
     .loader-img {
       margin-top: 50%;
+      width: 200px;
     }
   }
   
