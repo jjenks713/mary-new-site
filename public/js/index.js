@@ -188,7 +188,7 @@ $(document).ready(function(){
     $('.grid').masonry({
         // options
         itemSelector: '.grid-item',
-        columnWidth: 300
+        columnWidth: 200
       });
     
     var mediaItemContainer = $('#display-div');
