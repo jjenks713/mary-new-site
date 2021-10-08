@@ -20,6 +20,7 @@ $(document).ready(function(){
             url: '/assets/images/Depression.gif',
             name: 'Depression',
             med: 'Digital Gif',
+            size: '',
             val: '3'
         },
         {
@@ -40,6 +41,7 @@ $(document).ready(function(){
             url: '/assets/images/harlot-banner.jpg',
             name: 'Harlot’s Calamity Lyric Banner',
             med: 'Digital Drawing',
+            size: '',
             val: '6'
         },
         {
@@ -60,6 +62,7 @@ $(document).ready(function(){
             url: '/assets/images/bear.png',
             name: 'Bear',
             med: 'Wood Burning on Cutting Board',
+            size: '',
             val: '9'
         },
         {
@@ -87,35 +90,42 @@ $(document).ready(function(){
             url: '/assets/images/music.jpg',
             name: 'Music',
             med: 'Digital Drawing',
+            size: '',
             val: "13"
         },
         {
             url: '/assets/images/Yue.jpg',
             name: 'Yue',
+            med: '',
+            size: '',
             val: "15"
         },
         {
             url: '/assets/images/optimism.gif',
             name: 'Optimism',
             med: 'Digital GIF',
+            size: '',
             val: "16"
         },
         {
             url: '/assets/images/pessimism.gif',
             name: 'Pessimism',
             med: 'Digital GIF',
+            size: '',
             val: "17"
         },
         {
             url: '/assets/images/girl-2.jpg',
             name: 'Girl 2',
             med: 'Charcoal on Gray Paper',
+            size: '',
             val: "18"
         },
         {
             url: '/assets/images/girl-3.jpg',
             name: 'Girl 3',
             med: 'Charcoal on Gray Paper',
+            size: '',
             val: "19"
         },
         {
@@ -129,6 +139,7 @@ $(document).ready(function(){
             url: '/assets/images/i-love-you.jpeg',
             name: 'I Love You',
             med: 'Oil Painting',
+            size: '',
             val: "21"
         },
         {
@@ -219,6 +230,7 @@ $(document).ready(function(){
             url: '/assets/images/jack-sally.jpg',
             name: 'Jack and Sally',
             med: 'Oil Paint',
+            size: '',
             val: "34"
         },
         {
@@ -260,12 +272,14 @@ $(document).ready(function(){
             url: '/assets/images/wonderboom-1.jpg',
             name: 'Wonderboom Ad 1',
             med: 'Charcoal Drawing, Digital Ad',
+            size: '',
             val: "40"
         },
         {
             url: '/assets/images/wonderboom-2.jpg',
             name: 'Wonderboom Ad 2',
             med: 'Charcoal Drawing, Digital Ad',
+            size: '',
             val: "41"
         },
         {

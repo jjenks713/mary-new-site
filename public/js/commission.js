@@ -20,6 +20,7 @@ $(document).ready(function(){
             url: '/assets/images/bear.png',
             name: 'Bear',
             med: 'Wood Burning on Cutting Board',
+            size: '',
             val: '3'
         },
         {
@@ -68,6 +69,7 @@ $(document).ready(function(){
             url: '/assets/images/i-love-you.jpeg',
             name: 'I love You',
             med: 'Oil Painting',
+            size: '',
             val: '10'
         },
         {
@@ -108,6 +110,8 @@ $(document).ready(function(){
         {
             url: '/assets/images/Yue.jpg',
             name: 'Yue',
+            med: '',
+            size: '',
             val: "17"
         },
     ];
