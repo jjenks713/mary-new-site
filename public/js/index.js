@@ -7,7 +7,6 @@ $(document).ready(function(){
             med: 'Intaglio on Stonehenge',
             size: '10"X14in"',
             ed: 'Ed. 15',
-            price: '$40',
             val: '1'
         },
         {
@@ -16,7 +15,6 @@ $(document).ready(function(){
             med: 'Screenprint on Stonehenge',
             size: '14"X18in"',
             ed: 'Ed. 15',
-            price: '$60',
             val: '2'
         },
         {
@@ -25,7 +23,6 @@ $(document).ready(function(){
             med: 'Relief on Stonehenge',
             size: '20”x15”',
             ed: 'Ed. 10',
-            price: '$60',
             val: '3'
         },
         {
@@ -34,7 +31,6 @@ $(document).ready(function(){
             med: 'Relief on Masa',
             size: '7”x10”',
             ed: 'Ed. 9',
-            price: '$25',
             val: '4'
         },
         {
@@ -43,7 +39,6 @@ $(document).ready(function(){
             med: 'Suicide Relief on Lenox',
             size: '11”x15”',
             ed: 'Ed. 6',
-            price: '$40',
             val: '5'
         },
         {
@@ -52,7 +47,6 @@ $(document).ready(function(){
             med: 'Screenprint on Stonehenge',
             size: '11”x18”',
             ed: 'Ed. 10',
-            price: '$30',
             val: '6'
         },
         {
@@ -61,7 +55,6 @@ $(document).ready(function(){
             med: 'Intaglio on Lenox',
             size: '6”x8”',
             ed: 'Ed. 20',
-            price: '$15',
             val: '7'
         },
         {
@@ -70,7 +63,6 @@ $(document).ready(function(){
             med: 'Intaglio on Rives BFK',
             size: '11”x14”',
             ed: 'Ed. 10',
-            price: '$40',
             val: '8'
         },
         {
@@ -79,7 +71,6 @@ $(document).ready(function(){
             med: 'Letterpress on Lettra',
             size: '5.25”x7”',
             ed: 'Ed. 50',
-            price: '$10',
             val: '9'
         },
         {
@@ -88,7 +79,6 @@ $(document).ready(function(){
             med: 'Intaglio on Stonehenge',
             size: '10”x14”',
             ed: 'Ed. 15',
-            price: '$40',
             val: '10'
         },
         {
@@ -97,7 +87,6 @@ $(document).ready(function(){
             med: 'Screenprint on Stonehenge',
             size: '12”x12”',
             ed: 'Ed. 20',
-            price: '$60',
             val: '11'
         },
         {
@@ -106,7 +95,6 @@ $(document).ready(function(){
             med: 'Letterpress on Lettra',
             size: '5.5”x9.5”',
             ed: 'Ed. 25',
-            price: '$25',
             val: '12'
         },
         {
@@ -115,7 +103,6 @@ $(document).ready(function(){
             med: 'Screenprint on Stonehenge',
             size: '11”x14”',
             ed: 'Ed. 7',
-            price: '$30',
             val: "13"
         },
         {
@@ -124,7 +111,6 @@ $(document).ready(function(){
             med: 'Photopolymer Etching on Stonehenge',
             size: '5”x7”',
             ed: 'Ed. 20',
-            price: '$25',
             val: "14"
         },
         {
@@ -133,7 +119,6 @@ $(document).ready(function(){
             med: 'Relief on Masa',
             size: '5”x6”',
             ed: 'Ed. 30',
-            price: '$15',
             val: "15"
         },
         {
@@ -142,7 +127,6 @@ $(document).ready(function(){
             med: 'Relief on Masa',
             size: '5”x6”',
             ed: 'Ed. 30',
-            price: '$15',
             val: "16"
         },
         {
@@ -151,7 +135,6 @@ $(document).ready(function(){
             med: 'Suicide Relief and Letterpress',
             size: '11”x13.5”',
             ed: 'Ed. 25',
-            price: '$40',
             val: "17"
         },
         {
@@ -160,7 +143,6 @@ $(document).ready(function(){
             med: 'Suicide Relief on Masa',
             size: '12”x12”',
             ed: 'Ed. 10',
-            price: '$60',
             val: "18"
         },
         {
@@ -169,7 +151,6 @@ $(document).ready(function(){
             med: 'Intaglio on Stonehenge',
             size: '8”x10”',
             ed: 'Ed. 10 AP',
-            price: '$40',
             val: "19"
         },
         {
@@ -178,7 +159,6 @@ $(document).ready(function(){
             med: 'Relief and Watercolor on Lenox',
             size: '12”x16”',
             ed: 'Ed. 5',
-            price: '$40',
             val: "20"
         },
     ];
@@ -213,7 +193,6 @@ $(document).ready(function(){
                         '<p>'+ picArray[i].med + '</p>' +
                         '<p>'+ picArray[i].size + '</p>' +
                         '<p>'+ picArray[i].ed + '</p>' +
-                        '<p>'+ picArray[i].price + '</p>' +
                         '</div>' +
                     '</div>' +                   
                     '</div>' +          
